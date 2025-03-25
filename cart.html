@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.webp" alt="Ruz Fruity Paradise Logo" height="50px">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="fruits.html">Fruits</a>
+                <a href="cart.html">Cart</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="search-bar" placeholder="Search...">
+      <button onclick="searchProduct()">Search</button>
+  </div>
+    <!-- Cart Page Section -->
+    <section id="cart-page" class="cart-page">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <p>Your cart is currently empty.</p>
+        </div>
+        <div class="cart-summary">
+            <p><strong>Subtotal:</strong> <span id="subtotal">$0.00 BZD</span></p>
+            <p><strong>GST (12.5%):</strong> <span id="gst">$0.00 BZD</span></p>
+            <p><strong>Total:</strong> <span id="total">$0.00 BZD</span></p>
+        </div>
+        <button class="checkout-button" id="checkout-button">Proceed to Checkout</button>
+    </section>
+
+<!-- Modal for Payment Form -->
+<div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2>Payment Details</h2>
+        <form id="payment-details">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" required>
+
+            <label for="cardholder-name">Cardholder Name:</label>
+            <input type="text" id="cardholder-name" placeholder="John Doe" required>
+
+            <button type="submit" class="pay-now-button">Pay Now</button>
+            <button type="button" id="cancel-button" class="cancel-button">Cancel</button> <!-- Added Cancel Button -->
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="copyright">
+        <p>&copy; 2025 Ruz Fruity Paradise. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

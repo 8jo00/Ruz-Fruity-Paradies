@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.webp" alt="Ruz Fruity Paradise Logo" height="50px">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="fruits.html">Fruits</a>
+                <a href="cart.html">Cart</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" id="search-bar" placeholder="Search for items..." onkeyup="searchProduct()" aria-label="Search products">
+    </div>
+
+    <!-- Fruits Section -->
+    <h1 class="fru">Fresh Fruits Available</h1>
+    <section id="fruits" class="fruits">
+        <div class="fruit-list">
+            <div class="fruit-item" data-name="orange">
+                <img src="orange.jpg" alt="Orange">
+                <h3>Orange</h3>
+                <span>$7.50 BZD</span>
+                <p class="description">Sweet and juicy oranges, rich in Vitamin C.</p>
+                <button class="add-to-cart" onclick="addToCart('Orange', 7.50)">Add to Cart</button>
+            </div>
+            <div class="fruit-item" data-name="apple">
+                <img src="apple.jpg" alt="Apple">
+                <h3>Apple</h3>
+                <span>$6 BZD</span>
+                <p class="description">Crisp and refreshing apples, perfect for snacking.</p>
+                <button class="add-to-cart" onclick="addToCart('Apple', 6.00)">Add to Cart</button>
+            </div>
+            <div class="fruit-item" data-name="grape">
+                <img src="grape.jpg" alt="Grape">
+                <h3>Grape</h3>
+                <span>$8 BZD</span>
+                <p class="description">Sweet and seedless grapes, great for salads or desserts.</p>
+                <button class="add-to-cart" onclick="addToCart('Grape', 8.00)">Add to Cart</button>
+            </div>
+            <div class="fruit-item" data-name="pineapple">
+                <img src="pineapple.jpg" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <span>$5.50 BZD</span>
+                <p class="description">Tropical and tangy pineapples, perfect for juices or grilling.</p>
+                <button class="add-to-cart" onclick="addToCart('Pineapple', 5.50)">Add to Cart</button>
+            </div>
+            <div class="fruit-item" data-name="mango">
+                <img src="mango.jpg" alt="Mango">
+                <h3>Mango</h3>
+                <span>$9 BZD</span>
+                <p class="description">Sweet and creamy mangoes, a tropical delight.</p>
+                <button class="add-to-cart" onclick="addToCart('Mango', 9.00)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 Ruz Fruity Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
